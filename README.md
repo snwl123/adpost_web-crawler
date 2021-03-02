@@ -4,14 +4,16 @@ A simple web scraper made with Scrapy for Adpost.com.
 
 ### Instructions
 
-1. Requires: Python >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*  
-   
-In order to initialise virtual environment in preferred Python version, perform the following command in your command terminal at your preferred directory.
+**1. In order to initialise virtual environment in preferred Python version, perform the following command in your command terminal at your preferred directory.**  
+  
 ```sh
 py -(version) -m venv env  
-```
+```  
   
-2. Activate virtual environment.  
+Requires: Python >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*  
+  
+
+**2. Activate virtual environment.**  
 
 *On macOS and Linux:*  
 ```sh
@@ -24,7 +26,7 @@ source env/bin/activate
 ```
   
   
-3. Install Twisted version 20.3.0.  
+**3. Install Twisted version 20.3.0.**  
   
 ```sh
 pip install Twisted==20.3.0
@@ -33,7 +35,7 @@ pip install Twisted==20.3.0
 https://pypi.org/project/Twisted/20.3.0/
   
   
-4. Install Scrapy.  
+**4. Install Scrapy.**  
   
 ```sh
 pip install Scrapy
@@ -42,20 +44,20 @@ pip install Scrapy
 https://docs.scrapy.org/en/latest/intro/install.html
   
   
-5. Open a new command terminal at the same directory. Perform a git clone.
+**5. Open a new command terminal at the same directory. Perform a git clone.**
 ```sh
 git clone https://github.com/snwl123/adpost_web-crawler
 ```
 Close command terminal if necessary.  
   
 
-6. In your virtual environment, cd into "..\adpost\".  
+**6. In your virtual environment, cd into "..\adpost\".**  
 ```sh
 cd adpost
 ```
   
   
-7. Run command.
+**7. Run command.**  
 ```sh
 scrapy crawl adpost -s DEPTH_LIMIT = < preferred recursion depth limit (integer) >
 ```
