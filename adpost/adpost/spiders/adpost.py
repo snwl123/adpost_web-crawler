@@ -29,7 +29,7 @@ class QuotesSpider(scrapy.Spider):
         self.writeJS()
 
     def url_filter(self,url):
-        if url_match and ('https://www.adpost.com' in url) and (url != 'https://www.adpost.com/'):
+        if ('https://www.adpost.com' in url) and (url != 'https://www.adpost.com/'):
             return (True)
         else:
             return (False)
