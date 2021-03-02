@@ -61,7 +61,7 @@ cd adpost
 ```sh
 scrapy crawl adpost -s DEPTH_LIMIT = < preferred recursion depth limit (integer) >
 ```
-Set DEPTH_LIMIT to your preferred recursion depth limit.
+DEPTH_LIMIT is optional. Set DEPTH_LIMIT to your preferred recursion depth limit that is more than 0.
   
   
 **Note:** Follow only 2, 6, and 7 for instructions for subsequent set-ups to run your code if you have already completed the initial installation.  
