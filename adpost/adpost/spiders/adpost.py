@@ -25,7 +25,6 @@ class QuotesSpider(scrapy.Spider):
                         endpoint = link[23:]
                     if endpoint not in self.url_list:
                         (self.url_list).append(endpoint)
-                        yield scrapy.Request(url=url, callback=self.parse)
         self.writeJS()
 
     def url_filter(self,url):
