@@ -2,7 +2,7 @@
   
 A simple web scraper made with Scrapy for Adpost.com.
 
-### Instructions
+## Instructions
 
 **1. In order to initialise virtual environment in preferred Python version, perform the following command in your command terminal at your preferred directory.**  
   
@@ -64,10 +64,10 @@ scrapy crawl adpost -s DEPTH_LIMIT = < preferred recursion depth limit (integer)
 Set DEPTH_LIMIT to your preferred recursion depth limit.
   
   
-**Note** Follow only 2, 6, and 7 for instructions for subsequent set-ups to run your code if you have already completed the initial installation.  
+**Note:** Follow only 2, 6, and 7 for instructions for subsequent set-ups to run your code if you have already completed the initial installation.  
   
   
-### Additional Information
+## Additional Information
   
 Not yet implemented checking for webpage title.
   
