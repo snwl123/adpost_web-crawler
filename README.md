@@ -74,5 +74,8 @@ Not yet implemented checking for webpage title.
 -  For more information on virtual environments:   
    https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/  
 
+-  For more information on Scrapy:   
+   https://docs.scrapy.org/en/latest/intro/tutorial.html
+
 
 
