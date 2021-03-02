@@ -25,10 +25,12 @@ class QuotesSpider(scrapy.Spider):
                         endpoint = link[23:]
                     if endpoint not in self.url_list:
                         (self.url_list).append(endpoint)
+                        yield scrapy.Request(url=url, callback=self.parse)
         self.writeJS()
 
     def url_filter(self,url):
-        if ('https://www.adpost.com' in url) and (url != 'https://www.adpost.com/'):
+        url_match = re.match(r"^https://www.adpost.com/(([^/]*/?)?){2}$",url )
+        if url_match and ('https://www.adpost.com' in url) and (url != 'https://www.adpost.com/'):
             return (True)
         else:
             return (False)
